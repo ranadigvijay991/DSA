@@ -3,10 +3,17 @@ package Arrays;
 import java.util.Scanner;
 import java.util.Arrays;
 public class KthSmallest {
-    public static int Smallest(int[] array,int k){
-        int[] sorted = new int[array.length];
-        sorted = Arrays.sort(array, 0, 5);
-        return sorted[k];
+    public static int Smallest(int[] arr,int k){
+        for(int i=0; i<arr.length-1;i++){
+            for(int j=0; j<arr.length-i-1;j++){
+                if(arr[j]>arr[j+1]){
+                    int temp = arr[j];
+                    arr[j] = arr[j+1];
+                    arr[j+1] = temp;
+                }
+            }
+        }
+        return arr[k-1];
     }
     public static void main(String[] args) {
         System.out.println("Enter the size of the array: ");
