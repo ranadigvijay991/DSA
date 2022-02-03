@@ -30,6 +30,7 @@ public class MaxMin {
         for(int i=0; i<len ; i++){
             arr[i] = sc.nextInt();
         }
+        sc.close();
         System.out.println("Maximum is : "+ Max(arr));
         System.out.println("Minimum is : "+ Min(arr));
     }
