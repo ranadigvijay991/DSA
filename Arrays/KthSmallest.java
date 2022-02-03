@@ -1,7 +1,5 @@
 package Arrays;
-
 import java.util.Scanner;
-import java.util.Arrays;
 public class KthSmallest {
     public static int Smallest(int[] arr,int k){
         for(int i=0; i<arr.length-1;i++){
