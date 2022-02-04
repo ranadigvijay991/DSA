@@ -1,4 +1,4 @@
-package Arrays;
+
 import java.util.Scanner;
 public class MaxMin {
     public static int Max(int[] array){
