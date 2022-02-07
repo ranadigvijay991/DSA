@@ -1,19 +1,22 @@
 public class Union {
     public static void solve(int[] a, int[]b, int n, int m){
-        int[] array = new int[m+n];
-        for(int i=0;i<n;i++){
-            for(int j=0;j<m;j++){
-                if(a[i]<b[j]){System.out.println(a[i]);}
-                    
-                else if(a[i]>b[j]){System.out.println(a[i]);}
-                    
-                else if(a[i]==b[j]){System.out.println(b[j]);}
-                    
+        //int[] array = new int[m+n];
+        int i = 0, j = 0;
+        while (i < m && j < n) {
+            if (a[i] < b[j])
+                System.out.print(a[i++] + " ");
+            else if (b[j] < a[i])
+                System.out.print(b[j++] + " ");
+            else {
+                System.out.print(b[j++] + " ");
+                i++;
             }
         }
-        for( int i : array){
-            System.out.println(i);
-        }
+
+        while (i < m)
+            System.out.print(a[i++] + " ");
+        while (j < n)
+            System.out.print(b[j++] + " ");
     }
     public static void main(String[] args) {
         int[] a = {1,6,3,5,2};
