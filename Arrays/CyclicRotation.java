@@ -3,6 +3,7 @@ public class CyclicRotation
 
     public static void rotate(int arr[], int n)
     {
+       //Place the array in a new array with 1 space difference
         int[] array = new int[n+1];
         for(int i=0;i<n;i++){
             array[i+1] = arr[i];
