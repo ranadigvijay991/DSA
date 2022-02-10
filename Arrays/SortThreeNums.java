@@ -23,7 +23,7 @@ public class SortThreeNums {
        for(int k=0; k<ones;k++){
         System.out.print(1+" ");
     }
-    for(int l=0; l<zeros;l++){
+    for(int l=0; l<twos;l++){
         System.out.print(2+" ");
     }
 }
