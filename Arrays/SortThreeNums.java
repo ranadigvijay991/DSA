@@ -1,15 +1,24 @@
 public class SortThreeNums {
     public static void sort012(int arr[], int n)
     {
-    int num = 0;
-       for(int i=0;i<3;i++){
-           
-           for(int j=0;j<n;j++){
-               if (arr[j]==num){
-                   System.out.print(arr[j]+" ");
-               }
-            num=num+1;
-           }
+        int zeros=0;
+        int ones=0;
+        int twos=0;
+        
+        for(int i=0;i<n;i++){
+            if(arr[i]==0){
+                zeros++;
+            }
+            else if(arr[i]==1){
+                ones++;
+            }
+            else{
+                twos++;
+            }
+       
+        }
+        for(int j=0; j<zeros;j++){
+           System.out.print(0+" ");
        }
 }
     public static void main(String[] args) {
