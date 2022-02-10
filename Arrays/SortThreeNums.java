@@ -20,6 +20,12 @@ public class SortThreeNums {
         for(int j=0; j<zeros;j++){
            System.out.print(0+" ");
        }
+       for(int k=0; k<ones;k++){
+        System.out.print(1+" ");
+    }
+    for(int l=0; l<zeros;l++){
+        System.out.print(2+" ");
+    }
 }
     public static void main(String[] args) {
         int[] arr = {0, 2, 1, 2, 0};
