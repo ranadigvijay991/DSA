@@ -19,5 +19,13 @@ public class CommonElements {
         return arrli;
 
     }
-   
+    public static void main(String[] args) {
+        int[] A = {1,2,3,4,5};
+        int[] B = {3,4,5,6};
+        int[] C = {5,6,7,8};
+        ArrayList<Integer> arr = common(A,B,C,A.length,B.length,C.length);
+        for(int i: arr){
+            System.out.println(i);
+        }
+    }
 }
