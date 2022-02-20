@@ -1,3 +1,5 @@
+package Arrays;
+
 public class Union {
     public static void solve(int[] a, int[]b, int n, int m){
         //int[] array = new int[m+n];

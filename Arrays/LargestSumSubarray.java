@@ -1,3 +1,5 @@
+package Arrays;
+
 public class LargestSumSubarray {
     public static void solve(int[] arr){
         int min = Integer.MIN_VALUE;

@@ -1,3 +1,5 @@
+package Arrays;
+
 class NegativeElements{
     public static void sort(int[] arr){
         int j = 0, temp;

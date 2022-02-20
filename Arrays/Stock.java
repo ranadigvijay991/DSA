@@ -1,3 +1,5 @@
+package Arrays;
+
 public class Stock {
     public static void maxProfit(int[] prices, int n){
         //int n = prices.length;

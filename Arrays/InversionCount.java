@@ -1,3 +1,5 @@
+package Arrays;
+
 public class InversionCount {
     public static void solve(int[] arr, int n){
         int Count = 0;

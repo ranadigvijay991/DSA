@@ -1,3 +1,5 @@
+package Arrays;
+
 public class Jump {
     public static void calculate(int[] arr, int n){
         int target = n-1;

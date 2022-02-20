@@ -1,3 +1,5 @@
+package Arrays;
+
 public class SortThreeNums {
     public static void sort012(int arr[], int n)
     {

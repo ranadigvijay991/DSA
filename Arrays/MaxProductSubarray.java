@@ -1,3 +1,5 @@
+package Arrays;
+
 public class MaxProductSubarray {
     public static int solution(int[] arr) {
         int n = arr.length;
