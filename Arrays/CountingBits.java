@@ -14,5 +14,8 @@ class CountingBits{
     public static void main(String[] args) {
     int n = 5;
     int[] arr = countBits(n);
+    for(int i:arr){
+        System.out.println(i);
+    }
     }
 }
