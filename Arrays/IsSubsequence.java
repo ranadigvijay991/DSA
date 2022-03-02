@@ -1,7 +1,7 @@
 package Arrays;
 
 public class IsSubsequence {
-    public boolean isSubsequence(String s, String t) {
+    public static boolean isSubsequence(String s, String t) {
         int count = 0;
         if(s.length()==0){
             return true ;
@@ -19,6 +19,9 @@ public class IsSubsequence {
         return false;
     }
     public static void main(String[] args) {
-        
+        String s = "abc";
+        String t = "avldshbelvc";
+        boolean c = isSubsequence(s,t);
+        System.out.println(c);
     }
 }
