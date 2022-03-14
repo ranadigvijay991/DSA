@@ -3,7 +3,7 @@ package Strings;
 import java.util.Stack;
 
 public class SimplifyPath {
-    public static String solve(){
+    public static String solve(String path){
         Stack<String> s = new Stack<>();
         StringBuilder res = new StringBuilder();
         String[] p =path.split("/");
@@ -21,5 +21,10 @@ public class SimplifyPath {
         }
         
         return res.toString();
+    }
+    public static void main(String[] args) {
+        String path = "/home/";
+        String solution = solve(path);
+        System.out.println(solution);
     }
 }
